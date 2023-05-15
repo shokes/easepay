@@ -8,14 +8,15 @@ export default function Home() {
     <main>
       <Advert />
       <Hero />
+      <video
+        loop
+        muted
+        autoPlay
+        playsInline
+        className='absolute top-0 left-0 right-0 bottom-0 -z-10 h-[900px] w-full object-cover'
+      >
+        <source src='/vid.mp4' type='video/mp4' />
+      </video>
     </main>
   );
 }
-
-const Title = styled.h2`
-  color: pink;
-
-  @media (min-width: 768px) {
-    color: red;
-  }
-`;
