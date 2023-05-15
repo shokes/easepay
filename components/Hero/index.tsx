@@ -7,7 +7,7 @@ import Button from '../Button';
 const Hero = () => {
   return (
     <Container>
-      <div className='relative'>
+      <div>
         <div className='mb-[150px]'>
           <Navigation />
         </div>
@@ -23,7 +23,7 @@ const Hero = () => {
 
         <Button bg='bg-[#6936F5]'>Get Started</Button>
 
-        <SignUpStyles className='font-bold text-[14px] leading-[24px] mt-[24px]'>
+        <SignUpStyles>
           Sign up today and earn up to $200. Conditions apply. **
         </SignUpStyles>
       </div>
