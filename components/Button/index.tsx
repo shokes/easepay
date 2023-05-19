@@ -13,7 +13,7 @@ interface ButtonProps {
 }
 
 const buttonClasses = classNames(
-  'uppercase duration-300 py-[15px] px-[31px]  text-sm font-bold'
+  ' duration-300 py-[15px] px-[31px] text-white   border-white/[.05] text-[15px] leading-[24px] font-semibold'
 );
 
 const Button = ({
@@ -36,7 +36,7 @@ const Button = ({
       >
         <a
           className={classNames(
-            `${hover} ${buttonClasses} ${bg} text-white w-full block`
+            `${hover} ${buttonClasses} ${bg}  w-full block`
           )}
         >
           {children}
@@ -49,7 +49,7 @@ const Button = ({
       <Link
         href={link}
         className={classNames(
-          `${hover} ${buttonClasses} text-white  ${bg} w-full block`
+          `${hover} ${buttonClasses}  border  ${bg} w-full block`
         )}
       >
         {children}
