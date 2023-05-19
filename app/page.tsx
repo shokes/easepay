@@ -1,5 +1,4 @@
 'use client';
-import styled from 'styled-components';
 import Advert from '@/components/Advert';
 import Hero from '@/components/Hero';
 import Navigation from '@/components/Navigation';
@@ -12,6 +11,8 @@ export default function Home() {
       <Advert />
       <Navigation />
       <Hero />
+      <DashboardSample />
+      <Companies />
     </main>
   );
 }

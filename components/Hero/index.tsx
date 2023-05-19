@@ -6,6 +6,7 @@ import {
   Paragraph,
   SignUpStyles,
   AnimationContainerStyles,
+  HeroText2Mobile,
 } from './index.styles';
 import Button from '../Button';
 import { HiOutlineArrowSmRight } from 'react-icons/hi';
@@ -14,48 +15,47 @@ import icon from '../../public/assets/images/icon.png';
 import gsap from 'gsap';
 
 const Hero = () => {
-  // useEffect(() => {
+  useEffect(() => {
+    const box = document.getElementById('box');
 
-  //   const box = document.getElementById('box');
+    const tl = gsap.timeline({
+      repeat: -1,
+      ease: 'power2.out',
+    });
 
-  //   const tl = gsap.timeline({
-  //     repeat: -1,
-  //     ease: 'power2.out',
-  //   });
-
-  //   tl.to(
-  //     box,
-  //     {
-  //       y: -120,
-  //       delay: 1.5,
-  //     },
-  //     '<'
-  //   )
-  //     .to(
-  //       box,
-  //       {
-  //         y: -240,
-  //         delay: 1.5,
-  //       },
-  //       '<1'
-  //     )
-  //     .to(
-  //       box,
-  //       {
-  //         y: -360,
-  //         delay: 1.5,
-  //       },
-  //       '<1'
-  //     )
-  //     .to(
-  //       box,
-  //       {
-  //         y: 0,
-  //         delay: 1.5,
-  //       },
-  //       '<1'
-  //     );
-  // }, []);
+    tl.to(
+      box,
+      {
+        y: -120,
+        delay: 1.5,
+      },
+      '<'
+    )
+      .to(
+        box,
+        {
+          y: -240,
+          delay: 1.5,
+        },
+        '<1'
+      )
+      .to(
+        box,
+        {
+          y: -360,
+          delay: 1.5,
+        },
+        '<1'
+      )
+      .to(
+        box,
+        {
+          y: 0,
+          delay: 1.5,
+        },
+        '<1'
+      );
+  }, []);
 
   return (
     <Container>
@@ -64,22 +64,27 @@ const Hero = () => {
         muted
         autoPlay
         playsInline
-        className='absolute top-0 left-0 right-0 bottom-0 -z-20 h-[900px] w-full object-cover'
+        className='absolute top-0 left-0 right-0 bottom-0 -z-20 h-[1071px] w-full object-cover'
       >
         <source src='/vid.mp4' type='video/mp4' />
       </video>
 
       <div className='mb-[24px]'>
         <HeroText1>Business banking with</HeroText1>
-        <HeroText2>No credit check</HeroText2>
-        {/* <AnimationContainerStyles>
-          <div id='box'>
-            <HeroText2>Zero fees</HeroText2>
-            <HeroText2>Free Wires</HeroText2>
-            <HeroText2>Unlimited Reward</HeroText2>
-            <HeroText2>No credit check</HeroText2>
-          </div>
-        </AnimationContainerStyles> */}
+
+        <div className='hidden md:block'>
+          <AnimationContainerStyles>
+            <div id='box'>
+              <HeroText2>Zero fees</HeroText2>
+              <HeroText2>Free Wires</HeroText2>
+              <HeroText2>Unlimited Reward</HeroText2>
+              <HeroText2>No credit check</HeroText2>
+            </div>
+          </AnimationContainerStyles>
+        </div>
+        <div className='md:hidden'>
+          <HeroText2Mobile className=''>No credit check</HeroText2Mobile>
+        </div>
 
         <Paragraph>
           Thousands of entrepreneurs bank on Winden to start or grow their

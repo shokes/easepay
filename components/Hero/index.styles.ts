@@ -70,3 +70,19 @@ export const AnimationContainerStyles = styled.div`
   overflow: hidden;
   margin-bottom: 24px;
 `;
+
+export const HeroText2Mobile = styled.h2`
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  background-image: linear-gradient(
+    to right,
+    #a088ff 0%,
+    #a088ff 14%,
+    #37d7ff 81%,
+    #37d7ff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
