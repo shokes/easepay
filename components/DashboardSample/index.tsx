@@ -2,7 +2,6 @@ import React from 'react';
 import dashboard from '../../public/assets/images/dashboardImage.png';
 import Image from 'next/image';
 import card from '../../public/assets/images/card.png';
-import Container from '../Container';
 import phone1 from '../../public/assets/images/phone1.png';
 import phone2 from '../../public/assets/images/phone2.png';
 import phone3 from '../../public/assets/images/phone3.png';
