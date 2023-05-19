@@ -6,6 +6,7 @@ import phone1 from '../../public/assets/images/phone1.png';
 import phone2 from '../../public/assets/images/phone2.png';
 import phone3 from '../../public/assets/images/phone3.png';
 import { SeeHowStyles } from './index.styles';
+import card2 from '../../public/assets/images/card2.png';
 
 const DashboardSample = () => {
   return (
@@ -19,11 +20,11 @@ const DashboardSample = () => {
           className=''
         />
         <Image
-          src={card}
+          src={card2}
           width={487.62}
           height={263.7}
           alt='credit card'
-          className='absolute top-[-171px] -z-10 right-0'
+          className='absolute top-[-157px] -z-10 right-[30px]'
         />
 
         <Image
