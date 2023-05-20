@@ -50,7 +50,8 @@ const DashboardSample = () => {
           alt='phone 3'
           className='absolute top-[41rem]  right-[3rem]'
         />
-        <SeeHowStyles>See how</SeeHowStyles>
+
+        <SeeHowStyles className='text-center'>See how</SeeHowStyles>
       </div>
     </section>
   );
